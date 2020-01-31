@@ -1,0 +1,4 @@
+area(3600039152);
+relation[admin_level=8](area);
+(._;>;);
+out;
