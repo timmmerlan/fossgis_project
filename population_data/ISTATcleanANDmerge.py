@@ -44,6 +44,9 @@ def main():
 
     # putting some color into this map: choose one
     #gscript.run_command('v.colors', map='adminClean@ISTATmerge', use='attr', column='Population', color='population')
-    gscript.run_command('v.colors', map='adminClean@ISTATmerge', use='attr', column='Population_Density', color='population_dens')
+    gscript.run_command('v.colors', map='adminClean@ISTATmerge', use='attr', column='Population_Density', color='population_dens')
+
+    # exporting the processed map as a .geojson
+    gscript.run_command('v.out.ogr', overwrite=True, input='adminClean@ISTATmerge', output='adminFinal.geojson', format='GeoJSON')
 if __name__ == '__main__':
     main()
