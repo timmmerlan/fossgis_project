@@ -3,12 +3,40 @@
 <gxw>
     <layer_manager dim="953,0,974,1047">
     </layer_manager>
-    <display name="Display 1" render="1" mode="0" showCompExtent="1" alignExtent="1" constrainRes="0" showStatusbar="1" showToolbars="1" dim="-7,0,974,1047" extent="478000.000000,4141900.000000,528300.000000,4190000.000000,0.000000,1.000000" tbres="1.000000" viewMode="2d" >
-        <layer type="vector" name="roadpoints_reclassify@PERMANENT" checked="1" opacity="1.000000">
+    <display name="Display 1" render="1" mode="0" showCompExtent="1" alignExtent="1" constrainRes="0" showStatusbar="1" showToolbars="1" dim="-8,-8,1936,1056" extent="478000.000000,4141900.000000,528300.000000,4190000.000000,0.000000,1.000000" tbres="1.000000" viewMode="2d" >
+        <layer type="raster" name="vulnerability@PERMANENT" checked="1" opacity="1.000000">
             <selected />
+            <task name="d.rast">
+                <parameter name="map">
+                    <value>vulnerability@PERMANENT</value>
+                </parameter>
+            </task>
+        </layer>
+        <layer type="raster" name="vulnerability@PERMANENT" checked="1" opacity="1.000000">
+            <task name="d.rast">
+                <parameter name="map">
+                    <value>vulnerability@PERMANENT</value>
+                </parameter>
+            </task>
+        </layer>
+        <layer type="raster" name="population_density_reclassified@PERMANENT" checked="1" opacity="1.000000">
+            <task name="d.rast">
+                <parameter name="map">
+                    <value>population_density_reclassified@PERMANENT</value>
+                </parameter>
+            </task>
+        </layer>
+        <layer type="raster" name="roadpoints_density_reclassified@PERMANENT" checked="1" opacity="1.000000">
+            <task name="d.rast">
+                <parameter name="map">
+                    <value>roadpoints_density_reclassified@PERMANENT</value>
+                </parameter>
+            </task>
+        </layer>
+        <layer type="vector" name="landuse_region@PERMANENT" checked="0" opacity="1.000000">
             <task name="d.vect">
                 <parameter name="map">
-                    <value>roadpoints_reclassify@PERMANENT</value>
+                    <value>landuse_region@PERMANENT</value>
                 </parameter>
                 <parameter name="fcolor">
                     <value>200:200:200</value>
@@ -30,35 +58,10 @@
                 </parameter>
             </task>
         </layer>
-        <layer type="vector" name="roadpoints@PERMANENT" checked="0" opacity="1.000000">
+        <layer type="vector" name="landuse_region_reclassify@PERMANENT" checked="0" opacity="1.000000">
             <task name="d.vect">
                 <parameter name="map">
-                    <value>roadpoints@PERMANENT</value>
-                </parameter>
-                <parameter name="fcolor">
-                    <value>200:200:200</value>
-                </parameter>
-                <parameter name="color">
-                    <value>black</value>
-                </parameter>
-                <parameter name="width">
-                    <value>0</value>
-                </parameter>
-                <parameter name="size">
-                    <value>5</value>
-                </parameter>
-                <parameter name="type">
-                    <value>point,line,area,face</value>
-                </parameter>
-                <parameter name="icon">
-                    <value>basic/x</value>
-                </parameter>
-            </task>
-        </layer>
-        <layer type="vector" name="roads_region@PERMANENT" checked="0" opacity="1.000000">
-            <task name="d.vect">
-                <parameter name="map">
-                    <value>roads_region@PERMANENT</value>
+                    <value>landuse_region_reclassify@PERMANENT</value>
                 </parameter>
                 <parameter name="fcolor">
                     <value>200:200:200</value>
@@ -126,13 +129,6 @@
                 </parameter>
             </task>
         </layer>
-        <layer type="raster" name="roadpoints_density_reclassified@PERMANENT" checked="0" opacity="1.000000">
-            <task name="d.rast">
-                <parameter name="map">
-                    <value>roadpoints_density_reclassified@PERMANENT</value>
-                </parameter>
-            </task>
-        </layer>
         <layer type="raster" name="vulnerability@PERMANENT" checked="0" opacity="1.000000">
             <task name="d.rast">
                 <parameter name="map">
@@ -140,24 +136,10 @@
                 </parameter>
             </task>
         </layer>
-        <layer type="raster" name="roadpoints_density_reclassified@PERMANENT" checked="0" opacity="1.000000">
-            <task name="d.rast">
-                <parameter name="map">
-                    <value>roadpoints_density_reclassified@PERMANENT</value>
-                </parameter>
-            </task>
-        </layer>
         <layer type="raster" name="vulnerability@PERMANENT" checked="0" opacity="1.000000">
             <task name="d.rast">
                 <parameter name="map">
                     <value>vulnerability@PERMANENT</value>
-                </parameter>
-            </task>
-        </layer>
-        <layer type="raster" name="roadpoints_density_raster@PERMANENT" checked="0" opacity="1.000000">
-            <task name="d.rast">
-                <parameter name="map">
-                    <value>roadpoints_density_raster@PERMANENT</value>
                 </parameter>
             </task>
         </layer>
