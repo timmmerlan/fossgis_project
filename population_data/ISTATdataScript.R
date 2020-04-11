@@ -1,3 +1,5 @@
+# script for cleaning the "raw" table of the population data from ISTAT
+
 rm(list = ls())
 setwd("C:/Users/jnlpu/Documents/Studium/Geographie/5. Semester/FOSSGIS/Abschlussprojekt")
 
