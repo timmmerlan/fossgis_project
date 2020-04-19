@@ -1,0 +1,6 @@
+0 thru 1 = 0
+1 thru 2  = 2
+3 thru 4 = 3
+5 thru 20 = 4
+21 thru 100 = 5
+* = 0
